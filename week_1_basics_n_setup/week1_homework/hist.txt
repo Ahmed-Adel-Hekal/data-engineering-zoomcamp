@@ -1,0 +1,610 @@
+    1  cat /etc/*release*
+    2  sudo apt-get remove docker docker-engine docker.io containerd runc
+    3  sudo apt-get update
+    4  sudo apt-get install     ca-certificates     curl     gnupg     lsb-release
+    5  sudo mkdir -p /etc/apt/keyrings
+    6  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+    7  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+    8    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+    9  sudo apt-get update
+   10  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+   11  docker 
+   12  docker run hello-world
+   13  docker ps
+   14  systemctl start docker
+   15  sudo reboot
+   16  gpasswd -a $USER docker
+   17  sudo gpasswd -a $USER docker
+   18  docker run hello-world
+   19  sudo reboot
+   20  docker ps
+   21  sudo dockerd
+   22  clear
+   23  docker run hello-world
+   24  sudo dockerd
+   25  systemctl status docker
+   26  systemctl start docker
+   27  sudo shutdown
+   28  sudo -e /etc/wsl.conf
+   29  wsl --shutdown
+   30  sudo reboot
+   31  ls
+   32  pwd
+   33  docker
+   34  docker run hello-world
+   35  sudo dockerd
+   36  docker ps
+   37  docker version
+   38  sudo apt-get update
+   39  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+   40  sudo docker run hello-world
+   41  dockerd --debug   --tls=true   --tlscert=/var/docker/server.pem   --tlskey=/var/docker/serverkey.pem   --host tcp://192.168.59.3:2376
+   42  sudo dockerd --debug   --tls=true   --tlscert=/var/docker/server.pem   --tlskey=/var/docker/serverkey.pem   --host tcp://192.168.59.3:2376
+   43  docker run -d hello-world
+   44  sudo service docker status
+   45  sudo service docker start
+   46  sudo service docker status
+   47  sudo service docker start
+   48  sudo service docker status
+   49  docker run hello-world
+   50  sudo service docker start
+   51  sudo service docker status
+   52  sudo systemctl unmask docker
+   53  sudo systemctl start docker
+   54  ps -p 1 -o comm=
+   55  sudo systemctl start docker
+   56  sudo apt-get update
+   57  sudo apt-get install docker-compose-plugin
+   58  which docker-compose
+   59  sudo docker run hello-world
+   60  docker run hello-world
+   61  python
+   62  apt -install python
+   63  apt install python
+   64  git
+   65  git clone
+   66  ls
+   67  python test.py
+   68  python3
+   69  vi .bashc
+   70  ls
+   71  cd ku
+   72  cd kubectl
+   73  pwd
+   74  kubectl
+   75  kubectl get pods
+   76  kubectl get pod
+   77  kubectl get svc
+   78  clear
+   79  kubectl get svc
+   80  docker
+   81  ls
+   82  vi test.py
+   83  python
+   84  sudo apt update
+   85  sudo apt install python3
+   86  python3
+   87  kubectl get pods
+   88  kubectl get pod
+   89  which kubectl
+   90  sudo apt update~
+   91  sudo apt update
+   92  sudo apt install curl -y
+   93  cd /tmp
+   94  curl --output anaconda.sh https://repo.anaconda.com/archive/Anaconda3-5.3.1-Linux-x86_64.sh
+   95  sha256sum anaconda.sh
+   96  bash anaconda.sh
+   97  ls
+   98  cd ..
+   99  rm -t tmp/
+  100  rm -r tmp/
+  101  sudo rm -r tmp/
+  102  ls
+  103  cd usr/
+  104  ls
+  105  cd ..
+  106  cd home
+  107  ls
+  108  cd hekal
+  109  ls
+  110  rm -r anaconda3/
+  111  curl https://repo.anaconda.com/archive/Anaconda3-2022.10-Linux-x86_64.sh 
+  112  curl -o https://repo.anaconda.com/archive/Anaconda3-2022.10-Linux-aarch64.sh
+  113  curl https://repo.anaconda.com/archive/Anaconda3-2022.10-Linux-aarch64.sh -o ~/anaconda.sh
+  114  bash ~/anaconda.sh -b -p $HOME/anaconda
+  115  ls
+  116  anaconda
+  117  cd anaconda/
+  118  ls
+  119  cd ..
+  120  rm -r anaconda
+  121  ls
+  122  rm anaconda.sh 
+  123  curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -o ~/miniconda.sh
+  124  bash ~/miniconda.sh -b -p $HOME/miniconda
+  125  ls
+  126  rm -r miniconda
+  127  rm miniconda.sh 
+  128  wget https://repo.continuum.io/archive/Anaconda3-5.2.0-Linux-x86_64.sh
+  129  ls
+  130  bash Anaconda3-5.2.0-Linux-x86_64.sh 
+  131  pip install bunzip2
+  132  sudo apt-get install bzip2
+  133  which bzip2
+  134  sudo apt-get update
+  135  which bzip2
+  136  sudo apt-get install bzip2
+  137  ls
+  138  sudo apt upgrade
+  139  ls
+  140  [B./Anaconda3-5.2.0-Linux-x86_64.sh
+  141  l
+  142  ls
+  143  sudo su
+  144  ls
+  145  A
+  146  clear
+  147  bash Anaconda3-5.2.0-Linux-x86_64.sh 
+  148  sudo apt-get install libbz2-dev
+  149  bash Anaconda3-5.2.0-Linux-x86_64.sh 
+  150  sudo apt-get install libbz2-dev
+  151  sudo cp /usr/lib/python3.8/lib-dynload/_bz2.cpython-38-x86_64-linux-gnu.so  /usr/local/lib/python3.8/
+  152  sudo apt-get install bzip2
+  153  bash Anaconda3-5.2.0-Linux-x86_64.sh 
+  154  bash Anaconda3-5.2.0-Linux-x86_64.sh -u
+  155  conda 
+  156  conda env create
+  157  .bashrc
+  158  cd /home/hekal
+  159  ls
+  160  vi .bashrc
+  161  conda
+  162  conda env list
+  163  pytohn
+  164  python
+  165  conda update
+  166  conda update --prefix /home/hekal/anaconda3 anaconda
+  167  conda update anaconda
+  168  conda version
+  169  clear
+  170  docker version
+  171  sudo apt install docker.io
+  172  mkdir soft
+  173  cd soft
+  174  wget https://github.com/docker/compose/releases/download/v2.5.0/docker-compose-linux-x86_64 -O docker-compose
+  175  ls
+  176  chmod +x docker-compose
+  177  nano ~/.bashrc
+  178  source .bashrc
+  179  nano ~/.bashrc
+  180  source ~/.bashrc
+  181  docker run hello-world
+  182  cd ..
+  183  docker run hello-world
+  184  docker get pod
+  185  docker containers
+  186  docker ps
+  187  sudo docker ps
+  188  systemctl start docker
+  189  sudo service docker status
+  190  docker ps
+  191  docker -- version
+  192  docker run hello-world
+  193  sudo apt install docker.io
+  194  ls
+  195  cd notebooks/
+  196  ls
+  197  mkdir data
+  198  wget https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2021-01.parquet -o
+  199  curl https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2021-01.parquet -o
+  200  curl https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2021-01.parquet - o
+  201  wget https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2021-01.parquet
+  202  ls
+  203  mv green_tripdata_2021-01.parquet data/
+  204  ls
+  205  cd dat
+  206  cd data
+  207  wget https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2021-02.parquet
+  208  ls
+  209  cd ..
+  210  mkdir models
+  211  clear
+  212  pip install mlflow
+  213  pip install PyYAML
+  214  mlflow ui
+  215  conda activate
+  216  mlflow ui
+  217  pip install PyYAML
+  218  pip install mlflow
+  219  mlflow ui
+  220  mlflow
+  221  pip install mlflow
+  222  l
+  223  ls
+  224  conda create -n mlflow-env python=3.9
+  225  conda update -n base conda
+  226  cd mlops-zoomcamp/
+  227  cd 02-experiment-tracking/
+  228  ls
+  229  mkdir models
+  230  conda activate mlflow-env
+  231  ls
+  232  cd notebooks/
+  233  ls
+  234  cd ..
+  235  cd mlops-zoomcamp/
+  236  ls
+  237  cd 02-experiment-tracking/
+  238  ls
+  239  pip install -r requirements.txt
+  240  clear
+  241  mlflow
+  242  mlflow ui
+  243  mlflow ui--backend-store-uri sqlite://mlflow.db
+  244  mlflow ui --backend-store-uri sqlite://mlflow.db
+  245  clear
+  246  sudo apt install sqlite
+  247  mlflow ui --backend-store-uri sqlite://mlflow.db
+  248  mlflow ui --backend-store-uri sqlite:///mlflow.db
+  249  cd ..
+  250  cd notebooks/
+  251  ls
+  252  mlflow ui --backend-store-uri sqlite:///mlflow.db
+  253  cd ..
+  254  mlflow ui --backend-store-uri sqlite:///mlflow.db
+  255  cd mlops-zoomcamp/
+  256  ls
+  257  cd 02
+  258  cd 02-experiment-tracking/
+  259  mlflow ui --backend-store-uri sqlite:///mlflow.db
+  260  wsl --shutdown
+  261  conda env list 
+  262  conda activate base
+  263  cd mnt/C
+  264  ls
+  265  cd ~
+  266  ls
+  267  cd ..
+  268  ls
+  269  cd mnt/C/Users
+  270  cd mnt/C
+  271  cd mnt
+  272  ls
+  273  cd c
+  274  cd Users/
+  275  ls
+  276  cd Ahmed/
+  277  ls
+  278  python prefect.py 
+  279  which prefect
+  280  where prefect
+  281  pip install prefect
+  282  pip install asyncpg
+  283  prefect 
+  284  pip list
+  285  pip install -U prefect
+  286  pede
+  287  ped
+  288  pwd
+  289  mkdir docker_compose
+  290  cd docker_compose/
+  291  mkdir static_web
+  292  cd static_web/
+  293  sudo docker
+  294  docker compose
+  295  docker compose version
+  296  cd docker_compose/
+  297  cd static_site/
+  298  docker build -t static-image:v1 .
+  299  ls
+  300  cd ..
+  301  ls
+  302  docker build -t static-image:v1 .
+  303  sudo systemctl unmask docker
+  304  systemctl start docker
+  305  systemctl unmask docker.service
+  306  systemctl unmask docker.socket
+  307  systemctl start docker.service
+  308  sudo service --status-all
+  309  sudo service docker start
+  310  docker build -t static-image:v1 .
+  311  cp ./src ffff
+  312  cp /src ffff
+  313  ls
+  314  docker build -t static-image:v1 .
+  315  clear
+  316  docker images |grep static_site
+  317  docker images
+  318  docker --name c1 run static_image
+  319  docker run --name c1 static_image
+  320  images
+  321  docker images
+  322  docker run --name c1 static-image
+  323  docker run static-image
+  324  clear
+  325  docker images 
+  326  clear
+  327  docker build  .
+  328  docker images
+  329  docker build -t ahmed-test:v1 .
+  330  docker images
+  331  docker run -p 7070:80 ahmed-test
+  332  sudo docker run -p 7070:80 ahmed-test
+  333  sudo docker run -p 7070:80 ahmed-test:v1
+  334  ls
+  335  cd docker_compose/
+  336  ls
+  337  ls 
+  338  docker compose up -d
+  339  ls
+  340  docker compose up -d
+  341  sudo service docker start
+  342  docker compose up -d
+  343  docker compose ps
+  344  docker compose 
+  345  docker images
+  346  docker ps
+  347  docker images
+  348  docker compose logs -f
+  349  docker compose images
+  350  docker compose ps
+  351  docker compose stop c1
+  352  docker compose ps
+  353  docker compose up -d
+  354  clear
+  355  docker compose up -d
+  356  ls
+  357  docker compose up -d
+  358  curl -X POST -d '{'id':'123'}' http://localhost:9090/coasters -H "content-type: application/json" 
+  359  curl -X POST -d "{'id':'123'}" http://localhost:9090/coasters -H "content-type: application/json" 
+  360  curl -X POST -d '{"id":"123"}' http://localhost:9090/coasters -H "type: application/json"
+  361  curl -X POST -d '{"id":"123"}' http://localhost:9090/coasters -H "content-type: application/json"
+  362  clear
+  363  docker compose container
+  364  clear
+  365  docker compose ps
+  366  docker compose stop c2
+  367  docker compose stop api-1
+  368  docker compose stop rest
+  369  docker compose stop api-1
+  370  docker compose ps
+  371  docker compose stop api
+  372  ls
+  373  cd ..
+  374  ls
+  375  cd docker_compose/
+  376  mkdir new_pro
+  377  cd new_pro/
+  378  git clone https://github.com/abdennour/k8s-mastery.git
+  379  ls
+  380  cd k8s-mastery/
+  381  ls
+  382  cd ..
+  383  code dockerfile
+  384  code dockercompose
+  385  ls
+  386  rm -r k8s-mastery/
+  387  sudo rm -r k8s-mastery/
+  388  git clone https://github.com/rinormaloku/k8s-mastery.git
+  389  cd DE\ Zoomcamp/
+  390  cd week1\ /
+  391  pgcli -h localhost -p 5432 -u root -d ny_taxi
+  392  conda activate 
+  393  pgcli -h localhost -p 5432 -u root -d ny_taxi
+  394  pip install pscli
+  395  pgcli -h localhost -p 5432 -u root -d ny_taxi
+  396  pgcli
+  397  conda deactivate
+  398  pgcli
+  399  pip --version
+  400  pip install pgcli
+  401  pgcli
+  402  python
+  403  pip install psycopg2
+  404  pip install psycopg2-binary
+  405  python 
+  406  pgcli -h localhost -p 5432 -u root -d ny_taxi
+  407  pip install pgcli
+  408  pgcli -h localhost -p 5432 -u root -d ny_taxi
+  409  easy_install pgcli
+  410  pip install pgcli
+  411  sudo apt-get install python-pip
+  412  sudo apt-get install libpq-dev python-dev
+  413  python2-dev python2 python-dev-is-python3
+  414  python-dev python python-dev-is-python3
+  415  pgcli
+  416  sudo pip install pgcli
+  417  sudo apt-get install python-pip
+  418  pip
+  419  pip install psycopg2-binary
+  420  pgcli
+  421  sudo apt-get update
+  422  sudo apt-get install pgcli
+  423  pgcli
+  424  pgcli -h localhost -p 5432 -u root -d ny_taxi
+  425  github login
+  426  git-hub login
+  427  sudo apt install git-hub
+  428  git-hub login
+  429  git-hub setup
+  430  cd ..
+  431  ls
+  432  cd hekal
+  433  cd DE\ Zoomcamp/
+  434  ls
+  435  cd week1\ /
+  436  ls
+  437  cd ..
+  438  git init 
+  439  cd ..
+  440  lsd
+  441  ls
+  442  cd DE\ Zoomcamp/
+  443  git init 
+  444  git remote add origin https://github.com/Ahmed-Adel-Hekal/DE-Zoomcamp.git
+  445  git branch -M main
+  446  git push -u origin main
+  447  git add *
+  448  git commit -m "first week in DE Zoocamp"
+  449  git config --global user.email
+  450  git config --global ahmed.hek22@gmail.com
+  451  git commit -m "first week in DE Zoocamp"
+  452  git config --global user.email "ahmed.hek22@gmail.com"
+  453  git commit -m "first week in DE Zoocamp"
+  454  git config --global user.name "Ahmed-Adel-Hekal"
+  455  git commit -m "first week in DE Zoocamp"
+  456  git branch -M main
+  457  git remote add origin https://github.com/Ahmed-Adel-Hekal/DE-Zoomcamp.git
+  458  git push -u origin main
+  459  $pwd
+  460  pwd
+  461  cd week1\ /
+  462  mkdir ny_taxi_database
+  463  pwd
+  464  docker run -it -e POSTGRES_USER='root'-e POSTGRES_PASSWORD='root'-e POSTGRES_DB='ny_taxi'-v ($pwd)/ny_taxi_database:/var/lib/postgresql/data\
+  465  -p 5432:5432
+  466  docker run -it -e POSTGRES_USER='root'-e POSTGRES_PASSWORD='root'-e POSTGRES_DB='ny_taxi'-v $pwd/ny_taxi_database:/var/lib/postgresql/data-p 5432:5432
+  467  docker run -it -e POSTGRES_USER='root'-e POSTGRES_PASSWORD='root'-e POSTGRES_DB='ny_taxi'-v $pwd/ny_taxi_database:/var/lib/postgresql/data-p 5432:5432
+  468  postgres:13
+  469  docker run -it -e POSTGRES_USER='root'-e POSTGRES_PASSWORD='root'-e POSTGRES_DB='ny_taxi'-v $(pwd)/ny_taxi_database:/var/lib/postgresql/data-p 5432:5432
+  470  postgres:13
+  471  docker run -it -e POSTGRES_USER='root' -e POSTGRES_PASSWORD='root' -e POSTGRES_DB='ny_taxi' -v $(pwd)/ny_taxi_database:/var/lib/postgresql/data -p 5432:5432  postgres:13
+  472  docker run -it -e POSTGRES_USER='root' -e POSTGRES_PASSWORD='root' -e POSTGRES_DB='ny_taxi' -v $(pwd)/ny_taxi_database:/var/lib/postgresql/data -p 5432:5432  postgres
+  473  docker run -it   -e POSTGRES_USER="root"   -e POSTGRES_PASSWORD="root"   -e POSTGRES_DB="ny_taxi"   -v $(pwd)/ny_taxi_database:/var/lib/postgresql/data   -p 5432:5432   postgres:13
+  474  docker run   -e POSTGRES_USER="root"   -e POSTGRES_PASSWORD="root"   -e POSTGRES_DB="ny_taxi"   -v $(pwd)/ny_taxi_database:/var/lib/postgresql/data   -p 5432:5432   -it postgres:13
+  475  docker run -it postgres:13   -e POSTGRES_USER="root"   -e POSTGRES_PASSWORD="root"   -e POSTGRES_DB="ny_taxi"   -v $(pwd)/ny_taxi_database:/var/lib/postgresql/data   -p 5432:5432 \
+  476  docker ps
+  477  clear
+  478  docker run -it    -e POSTGRES_USER="root"   -e POSTGRES_PASSWORD="root"   -e POSTGRES_DB="ny_taxi"   -v $(pwd)/ny_taxi_database:/var/lib/postgresql/data   -p 5432:5432   postgres:13
+  479  pwd
+  480  ls
+  481  docker run -it   -e POSTGRES_USER="root"   -e POSTGRES_PASSWORD="root"   -e POSTGRES_DB="ny_taxi"   -v $(pwd)/ny_taxi_database:/var/lib/postgresql/data   -p 5432:5432   postgres:13
+  482  ls ny_taxi_database/
+  483  sudo ls ny_taxi_database/
+  484  pip install pgcli
+  485  pgcli 
+  486  pgcli -h localhost -p 5432 -u root -d ny_taxi
+  487  cd De
+  488  cd DE\ Zoomcamp/
+  489  cd week1\ /
+  490  docker run -it   -e POSTGRES_USER="root"   -e POSTGRES_PASSWORD="root"   -e POSTGRES_DB="ny_taxi"   -v $(pwd)/ny_taxi_database:/var/lib/postgresql/data   -p 5432:5432   postgres:13
+  491  docker run -it \
+  492  docker run -it   -e POSTGRES_USER="root"   -e POSTGRES_PASSWORD="root"   -e POSTGRES_DB="ny_taxi"   -v $(pwd)/ny_taxi_database:/var/lib/postgresql/data   -p 5432:5432   postgres:13
+  493  docker run -it     -e POSTGRES_USER="root"     -e POSTGRES_PASSWORD="root"     -e POSTGRES_DB="ny_taxi"     -v $(pwd)/ny_taxi_database:/var/lib/postgresql/data     -p 5432:5432     postgres:13
+  494  ls
+  495  docker run -it     -e POSTGRES_USER="root"     -e POSTGRES_PASSWORD="root"     -e POSTGRES_DB="ny_taxi"     -v $(pwd)/ny_taxi_database/:/var/lib/postgresql/data     -p 5432:5432     postgres:13
+  496  docker run -it     -e POSTGRES_USER="root"     -e POSTGRES_PASSWORD="root"     -e POSTGRES_DB="ny_taxi"     -v "$(pwd)/ny_taxi_database/":/var/lib/postgresql/data     -p 5432:5432     postgres:13
+  497  docker ps
+  498  pgcli
+  499  pgcli -h localhost -u root
+  500  pgcli -h localhost -p 5432 -u root -d ny_taxi
+  501  jupyter notebook
+  502  conda activate base
+  503  jupyter notebook
+  504  conda env list
+  505  conda activate mlfloe-env
+  506  conda activate mlflow-env
+  507  jupyter notebook
+  508  pip install psycopg2-binary
+  509  jupyter notebook
+  510  wget https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-01.parquet
+  511  pgcli
+  512  docker images
+  513  sudo service docker start
+  514  docker images
+  515  docker ps
+  516  cd D
+  517  cd DE\ Zoomcamp/
+  518  docker run -it \
+  519    -e POSTGRES_USER="root" \
+  520    -e POSTGRES_PASSWORD="root" \
+  521    -e POSTGRES_DB="ny_taxi" \
+  522    -v "$(pwd)/ny_taxi_database":"/var/lib/postgresql/data"\
+  523    -p 5432:5432 \
+  524  postgres:13
+  525  docker run -it \
+  526  docker run -it -e POSTGRES_USER="root" -e POSTGRES_PASSWORD="root" -e POSTGRES_DB="ny_taxi" -v "$(pwd)/ny_taxi_database":"/var/lib/postgresql/data" -p 5432:5432 postgres:13
+  527  cd ..
+  528  docker run -it -e POSTGRES_USER="root" -e POSTGRES_PASSWORD="root" -e POSTGRES_DB="ny_taxi" -v "$(pwd)/ny_taxi_database":"/var/lib/postgresql/data" -p 5432:5432 postgres:13
+  529  pgcli -h localhost -u root 
+  530  pgcli -h localhost -p 5432 -u root -d ny_taxi
+  531  docker run -it --network=pg_network test2 --url="https://d37ci6v
+  532  zurychx.cloudfront.net/trip-data/yellow_tripdata_2022-01.parquet" --user=root --password=root --host=localhost --port=5432 --db_name=ny_taxi
+  533  cd DE\ Zoomcamp/
+  534  cd week1\ /
+  535  ls
+  536  cd .. 
+  537  docker run -it -e POSTGRES_USER="root" -e POSTGRES_PASSWORD="root" -e POSTGRES_DB="ny_taxi" -v "$(pwd)/ny_taxi_database":"/var/lib/postgresql/data"-p 5432:5432 postgres:13
+  538  ls
+  539  docker run -it   -e POSTGRES_USER="root"   -e POSTGRES_PASSWORD="root"   -e POSTGRES_DB="ny_taxi"   -v "$(pwd)/ny_taxi_database/":"/var/lib/postgresql/data"  -p 5432:5432   postgres:13
+  540  docker run -it   -e POSTGRES_USER="root"   -e POSTGRES_PASSWORD="root"   -e POSTGRES_DB="ny_taxi"   -v "$(pwd)/ny_taxi_database/...":"/var/lib/postgresql/data"  -p 5432:5432   postgres:13
+  541  docker run -it   -e POSTGRES_USER="root"   -e POSTGRES_PASSWORD="root"   -e POSTGRES_DB="ny_taxi"   -v "$(pwd)/ny_taxi_database":"/var/lib/postgresql/data"  -p 5432:5432   postgres:13
+  542  docker run -it   -e POSTGRES_USER="root"   -e POSTGRES_PASSWORD="root"   -e POSTGRES_DB="ny_taxi_database"   -v $(pwd)/ny_taxi_postgres_data:/var/lib/postgresql/data   -p 5432:5432   postgres:13
+  543  docker run -it   -e POSTGRES_USER="root"   -e POSTGRES_PASSWORD="root"   -e POSTGRES_DB="ny_taxi_database"   -v $(pwd)/ny_taxi_postgres_data:/var/lib/postgresql/data   -p 5432:5432 postgres:13
+  544  docker run -it   -e POSTGRES_USER="root"   -e POSTGRES_PASSWORD="root"   -e POSTGRES_DB="ny_taxi"   -v $(pwd)/ny_taxi_postgres_data:/var/lib/postgresql/data   -p 5432:5432 postgres:13
+  545  docker images
+  546  docker run postgres
+  547  docker run postgres:13
+  548  ls
+  549  docker run -it   -e POSTGRES_USER="root"   -e POSTGRES_PASSWORD="root"   -e POSTGRES_DB="ny_taxi"   -v $(pwd)/ny_taxi_database:/var/lib/postgresql/data   -p 5432:5432   postgres:13
+  550  docker run -it -e POSTGRES_USER="root" -e POSTGRES_PASSWORD="root" -e POSTGRES_DB="ny_taxi" -v "$(pwd)/ny_taxi_database":"/var/lib/postgresql/data" -p 5432:5432 postgres:13
+  551  kill -9 tcp/ip 5432
+  552  docker run -it -e POSTGRES_USER="root" -e POSTGRES_PASSWORD="root" -e POSTGRES_DB="ny_taxi" -v "$(pwd)/ny_taxi_database":"/var/lib/postgresql/data" -p 5432:5432 postgres:13
+  553  sudo chmod a+rwx ny_taxi_database/
+  554  cd DE\ Zoomcamp/
+  555  cd week1\ /
+  556  docker run -it--network=pg_networktest2--url="https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-01.parquet"--user=root--password=root--host=localhost --port=5432 --db_name=ny_taxi
+  557  docker run -it --network=pg_network test2 --url="https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-01.parquet" --user=root --password=root --host=localhost --port=5432 --db_name=ny_taxi
+  558  clear
+  559  docker build -t test2 .
+  560  ls
+  561  rm -r ny_taxi_database/
+  562  sudo rm -r ny_taxi_database/
+  563  docker build -t test2 .
+  564  cd DE\ Zoomcamp/
+  565  cd week1\ /
+  566  cd .. 
+  567  ls
+  568  cd DE\ Zoomcamp/
+  569  cd week1\ /
+  570  docker build -t test2 .
+  571  sudo service docker start
+  572  docker build -t test2 .
+  573  docker images
+  574  docker build -t test2 .
+  575  docker run test2
+  576  docker build -t test2 .
+  577  docker run test2
+  578  docker run -it  --network=pg_network   test2   --url="https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-01.parquet"   --user=root   --password=root   --host=localhost    --port=5432    --db_name=ny_taxi 
+  579  clear
+  580  service --status-all
+  581  service start postgres
+  582  docker run -it  --network=pg_network   test2   --url="https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-01.parquet"   --user=root   --password=root   --host=localhost    --port=5432    --db_name=ny_taxi 
+  583  docker run -it  --network=pg_network   test2   --url="https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-01.parquet"   --user=root   --password=root   --host='0.0.0.0'    --port=5432    --db_name=ny_taxi 
+  584  cd new_test
+  585  docker run -it   -e POSTGRES_USER="root"   -e POSTGRES_PASSWORD="root"   -e POSTGRES_DB="ny_taxi"   -v $(pwd)/ny_taxi_postgres_data:/var/lib/postgresql/data   -p 5432:5432   postgres:13
+  586  sudo service docker start
+  587  docker run -it   -e POSTGRES_USER="root"   -e POSTGRES_PASSWORD="root"   -e POSTGRES_DB="ny_taxi"   -v $(pwd)/ny_taxi_postgres_data:/var/lib/postgresql/data   -p 5432:5432   postgres:13
+  588  docker build -t test3 .
+  589  sudo chown -R $USER ny_taxi_postgres_data/
+  590  sudo rm -r ny_taxi_postgres_data/
+  591  clear
+  592  docker build -t test4 .
+  593  URL="https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz"
+  594  docker run -it   --network=pg-network   taxi_ingest:v001     --user=root     --password=root     --host=pg-database     --port=5432     --db=ny_taxi     --table_name=yellow_taxi_trips     --url=${URL}
+  595  docker images
+  596  clar
+  597  clear
+  598  URL="https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz"
+  599  docker run -it   --network=pg-network   test4     --user=root     --password=root     --host=pg-database     --port=5432     --db=ny_taxi     --table_name=yellow_taxi_trips     --url=${URL}
+  600  docker run -it   --network=pg_network   test4     --user=root     --password=root     --host=pg-database     --port=5432     --db=ny_taxi     --table_name=yellow_taxi_trips     --url=${URL}
+  601  URL="https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-01.parquet"
+  602  docker run -it   --network=pg_network   test4     --user=root     --password=root     --host=pg-database1     --port=5432     --db=ny_taxi     --table_name=yellow_taxi_trips     --url=${URL}
+  603  docker build -t test4 .
+  604  docker run -it   --network=pg_network   test4     --user=root     --password=root     --host=pg-database1     --port=5432     --db=ny_taxi     --table_name=yellow_taxi_trips     --url=${URL}
+  605  docker build -t test4 .
+  606  docker run -it   --network=pg_network   test4     --user=root     --password=root     --host=pg-database1     --port=5432     --db=ny_taxi     --table_name=yellow_taxi_trips     --url=${URL}
+  607  history
+  608  cat history > hist.txt
+  609  cat
+  610  history > hist.txt
